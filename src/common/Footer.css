@@ -1,0 +1,77 @@
+.footer {
+	height: 4.5vh;
+	width: 100vw;
+	background-color: #f5f5f5;
+	color: #323232;
+	font-size: 12px;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	border-top: #323232 1px solid;
+	z-index: 500;
+}
+
+.footer:hover {
+	height: 7vh;
+	font-size: 12px;
+	transition: 0.5s;
+}
+
+.footer_element {
+	height: 95%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.footer_element:hover {
+	border-top: #323232 3px solid;
+	cursor: pointer;
+}
+
+.active_footer {
+	position: fixed;
+	bottom: 4.5vh;
+	width: 100vw;
+	border-top: #323232 1px solid;
+	border-bottom: #323232 1px solid;
+	background-color: #f5f5f5;
+	color: #323232;
+	z-index: 490;
+}
+
+.follow_us {
+	height: 10vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+.corporate {
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+.corporate ul {
+	height: 70%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 6%;
+}
+
+.hidden {
+	display: none;
+}

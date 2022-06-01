@@ -1,0 +1,31 @@
+.navbar {
+	z-index: 300;
+	height: 14vh;
+	width: 100vw;
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	top: 0;
+	background-color: #f5f5f5;
+	padding: 0 30px;
+}
+
+.style_logo {
+	height: 20px;
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.links {
+	color: #d7d7d7;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 6% 0 0%;
+}
+
+.links:hover {
+	cursor: pointer;
+	color: #bc8247;
+}

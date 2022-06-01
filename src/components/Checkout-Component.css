@@ -1,0 +1,150 @@
+.two_components {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-top: 3%;
+}
+
+.form_checkout {
+	height: 50%;
+	width: 46%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.line_formcheckout {
+	color: #f0f0f0;
+	height: 2px;
+	width: 100%;
+	margin: 2% 0;
+}
+
+.form_body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.form-control {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.name_inputs {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-control_input,
+.form-control_label {
+	height: auto;
+	padding: 3%;
+	width: 100%;
+}
+
+.form-control_input {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.form-control_label {
+	font-weight: bold;
+}
+
+.form-control_input:focus {
+	outline: none;
+	border-color: #240370;
+	background-color: #e0d4fd;
+}
+
+.control-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+button {
+	height: 40px;
+	width: 120px;
+	color: #323232;
+	font-size: 8px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	padding: 10px;
+	border: #323232 solid 2px;
+	z-index: 10;
+	text-align: center;
+	cursor: pointer;
+}
+
+button:hover,
+button:active {
+	border: #bc8247 solid 3px;
+	background-color: #bc8247;
+	color: #f5f5f5;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+	background-color: #ccc;
+	color: #292929;
+	border-color: #ccc;
+	cursor: not-allowed;
+}
+
+.form-actions {
+	text-align: right;
+	margin-top: 8%;
+}
+
+.invalid_input {
+	height: auto;
+	padding: 3%;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #b40e0e;
+	background-color: #fddddd;
+}
+
+.invalid_input:focus {
+	outline: none;
+	border-color: #ff8800;
+	background-color: #fbe8d2;
+}
+
+.error-text {
+	color: #b40e0e;
+}
+
+.list_totals {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: left;
+	list-style-type: none;
+}
+
+.list_totals li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2% 0;
+}
