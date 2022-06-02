@@ -56,11 +56,9 @@ const SubscribeModal = (props) => {
 					disabled={!isValid}
 					style={{
 						width: "30%",
-						height: "4px",
 						backgroundColor: "#323232",
 						color: "#ffffff",
 						padding: "10px",
-						paddingBottom: "24px",
 						textAlign: "center",
 						fontSize: "12px",
 						fontWeight: "bold",
