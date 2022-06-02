@@ -7,6 +7,7 @@ import KlarnaImg from "../assets/klarna.svg";
 import GiftCardImg from "../assets/gift-card.svg";
 import DHLLogoImg from "../assets/DHL_logo.svg";
 import RelaisColisImg from "../assets/relais-colis_logo.svg";
+import { Link } from "react-router-dom";
 
 import "./Footer.css";
 import useInput from "../Hooks/use-input";
@@ -146,19 +147,51 @@ const Footer = () => {
 				onMouseOver={onMouseOverHandler2}
 				onMouseOut={onMouseOutHandler2}>
 				<ul className='corporate'>
-					<li>Stores</li>
-					<li>Careers</li>
-					<li>Investor Relations</li>
+					<li style={{ cursor: "pointer" }}>Stores</li>
+					<li style={{ cursor: "pointer" }}>Careers</li>
+					<li style={{ cursor: "pointer" }}>Investor Relations</li>
 				</ul>
 				<ul>
-					<li>Outstock Family</li>
-					<li>Outstock Journal</li>
-					<li>Soustainability</li>
+					<Link
+						style={{
+							cursor: "pointer",
+							color: "#323232",
+							textDecoration: "none",
+						}}
+						to='/aboutus'>
+						<li style={{ cursor: "pointer" }}>Outstock Family</li>
+					</Link>
+					<li style={{ cursor: "pointer" }}>Outstock Journal</li>
+					<li style={{ cursor: "pointer" }}>Soustainability</li>
 				</ul>
 				<ul>
-					<li>Outstock</li>
-					<li>Outstock Home</li>
-					<li>Outstock Originals</li>
+					<Link
+						style={{
+							cursor: "pointer",
+							color: "#323232",
+							textDecoration: "none",
+						}}
+						to='/'>
+						<li>Outstock</li>
+					</Link>
+					<Link
+						style={{
+							cursor: "pointer",
+							color: "#323232",
+							textDecoration: "none",
+						}}
+						to='/'>
+						<li style={{ cursor: "pointer" }}>Outstock Home</li>
+					</Link>
+					<Link
+						style={{
+							cursor: "pointer",
+							color: "#323232",
+							textDecoration: "none",
+						}}
+						to='/products'>
+						<li style={{ cursor: "pointer" }}>Outstock Originals</li>
+					</Link>
 				</ul>
 			</div>
 
@@ -205,12 +238,12 @@ const Footer = () => {
 				onMouseOver={onMouseOverHandler4}
 				onMouseOut={onMouseOutHandler4}>
 				<ul className='customer_service'>
-					<li>My Account</li>
-					<li>My Orders</li>
+					<li style={{ cursor: "pointer" }}>My Account</li>
+					<li style={{ cursor: "pointer" }}>My Orders</li>
 				</ul>
 				<ul>
-					<li>Need help?</li>
-					<li>Register your return</li>
+					<li style={{ cursor: "pointer" }}>Need help?</li>
+					<li style={{ cursor: "pointer" }}>Register your return</li>
 				</ul>
 				<div className='customer_service_images'>
 					<img
@@ -261,11 +294,10 @@ const Footer = () => {
 				onMouseOver={onMouseOverHandler5}
 				onMouseOut={onMouseOutHandler5}>
 				<ul className='corporate'>
-					<li>Privacy and Cookie Policy</li>
-					<li>Terms and Conditions</li>
+					<li style={{ cursor: "pointer" }}>Privacy and Cookie Policy</li>
 				</ul>
 				<ul>
-					<li>Outstock Family</li>
+					<li style={{ cursor: "pointer" }}>Terms and Conditions</li>
 				</ul>
 			</div>
 		</>
