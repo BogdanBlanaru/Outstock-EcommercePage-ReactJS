@@ -1,5 +1,5 @@
 .saleof_products {
-	height: 120%;
+	height: 200%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -8,7 +8,37 @@
 	background-color: #ffffff;
 	color: #323232;
 	position: absolute;
-	top: 492%;
+	top: 420%;
+}
+
+.title_saleoff {
+	height: 8%;
+	width: 30%;
+	text-align: center;
+	z-index: 100;
+	background-color: #ffffff;
+}
+
+.horizontal_line_saleoff {
+	color: #f0f0f0;
+	height: 2px;
+	width: 94%;
+	position: relative;
+	top: -3.7%;
+}
+
+.description_saleoff {
+	height: 8%;
+	width: 100%;
+	text-align: center;
+}
+
+.list_saleof {
+	height: 40%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container_saleof {
@@ -16,6 +46,19 @@
 	width: 90%;
 	display: grid;
 	grid-template-columns: repeat(5, 18.5%);
-	grid-template-rows: repeat(1, 145%);
+	grid-template-rows: repeat(1, 100%);
 	grid-column-gap: 25px;
+}
+
+.saleoff_brands {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.saleoff_brandImg {
+	height: 60%;
+	width: 10%;
 }

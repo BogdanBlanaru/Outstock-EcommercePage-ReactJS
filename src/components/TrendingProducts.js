@@ -3,7 +3,6 @@ import Product from "./Product";
 import "./TrendingProducts.css";
 import ImgTrending1 from "../assets/imgTrending1.jpg";
 import ImgTrending2 from "../assets/imgTrending2.jpg";
-import Subscribe from "../common/Subscribe";
 
 const TrendingProducts = () => {
 	const [products, setProducts] = useState([]);
@@ -93,7 +92,6 @@ const TrendingProducts = () => {
 					<img className='img_bottles' src={ImgTrending2} />
 				</div>
 			</div>
-			<Subscribe />
 		</div>
 	);
 };

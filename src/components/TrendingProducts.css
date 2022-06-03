@@ -1,5 +1,5 @@
 .trending_products {
-	height: 340%;
+	height: 260%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .list {
-	height: 45%;
+	height: 65%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -38,7 +38,7 @@
 	width: 90%;
 	display: grid;
 	grid-template-columns: repeat(4, 23.5%);
-	grid-template-rows: repeat(2, 55%);
+	grid-template-rows: repeat(2, 52%);
 	grid-column-gap: 25px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .two_products {
-	height: 15%;
+	height: 20%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
