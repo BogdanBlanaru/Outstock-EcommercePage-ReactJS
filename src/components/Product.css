@@ -73,3 +73,10 @@
 .invalid {
 	opacity: 0;
 }
+
+@media (max-width: 768px) {
+	.card_product {
+		height: 20%;
+		margin: 3% 0;
+	}
+}

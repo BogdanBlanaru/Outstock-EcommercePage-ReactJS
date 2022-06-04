@@ -54,3 +54,17 @@
 	top: 50%;
 	left: 10.5%;
 }
+
+@media (max-width: 768px) {
+	.components {
+		height: auto;
+		flex-direction: column;
+		top: 80%;
+	}
+	.category {
+		height: 20vh;
+		width: 60vw;
+		padding: 30px;
+		margin: 2% 0;
+	}
+}

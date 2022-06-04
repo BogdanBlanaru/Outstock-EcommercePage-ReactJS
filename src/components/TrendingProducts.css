@@ -112,3 +112,53 @@ button {
 	position: relative;
 	left: 3%;
 }
+
+@media (max-width: 768px) {
+	.trending_products {
+		height: 500%;
+		top: 175%;
+	}
+
+	.title {
+		height: 1.5%;
+		width: 60%;
+		margin-top: 5%;
+	}
+
+	.horizontal_line {
+		display: none;
+	}
+
+	.description {
+		width: 80%;
+	}
+
+	.list {
+		height: 85%;
+		width: 100%;
+	}
+
+	.container {
+		height: 65%;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.two_products {
+		height: 8%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottles {
+		width: 90%;
+		margin: 2% 0;
+	}
+}
+
+@media (max-width: 576px) {
+}
