@@ -58,6 +58,24 @@ export const addTotalAmount = (amount, price, id) => {
 	}
 };
 
+export const addQuantity = (amount, id) => {
+	const quantityListStorage = localStorage.getItem(`quantityItem${id}`);
+	if (quantityListStorage === null) {
+		localStorage.setItem(`quantityItem${id}`, JSON.stringify(amount));
+	} else {
+		const storageArray = JSON.parse(quantityListStorage);
+		const quantityId = id;
+		if (quantityId === id) {
+			let storageArray = "";
+			storageArray = amount;
+			localStorage.setItem(`quantityItem${id}`, JSON.stringify(storageArray));
+		} else if (quantityId !== id) {
+			storageArray.push(amount);
+			localStorage.setItem(`quantityItem${id}`, JSON.stringify(storageArray));
+		}
+	}
+};
+
 export const addCalculatedTotalAmount = (totalAmount) => {
 	const totalAmountStorage = localStorage.getItem("totalAmountList");
 	if (totalAmountStorage === null) {

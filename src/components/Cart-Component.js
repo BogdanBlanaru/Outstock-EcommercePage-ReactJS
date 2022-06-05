@@ -4,7 +4,7 @@ import TableCart from "./TableCart";
 import Subscribe from "../common/Subscribe";
 import wishlistImg from "../assets/wishlist.jpg";
 import "./Wishlist-Component.css";
-import { addTotalAmount } from "../Helpers";
+import { addTotalAmount, addQuantity } from "../Helpers";
 import { Link } from "react-router-dom";
 
 const CartComponent = () => {
@@ -56,6 +56,7 @@ const CartComponent = () => {
 								key={product.id}
 								onDelete={onDelete}
 								addTotalAmount={addTotalAmount}
+								addQuantity={addQuantity}
 							/>
 						);
 					})}

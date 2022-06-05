@@ -4,9 +4,11 @@ import { addCalculatedTotalAmount } from "../Helpers";
 const TableCart = (props) => {
 	const [amount, setAmount] = useState(1);
 
+	const [quantity, setQuantity] = useState(1);
+
 	let totalArray = [];
 	const total = (price) => {
-		const total = (price * amount).toFixed(2);
+		const total = (price * quantity).toFixed(2);
 		totalArray.push(total);
 
 		return total;
@@ -23,14 +25,35 @@ const TableCart = (props) => {
 		addCalculatedTotalAmount(sumAmounts);
 	}, [amount]);
 
+	useEffect(() => {
+		const quantityStorage = localStorage.getItem(
+			`quantityItem${props.products.id}`
+		);
+		if (quantityStorage) {
+			const quantityArray = JSON.parse(quantityStorage);
+			setQuantity(quantityArray);
+		}
+	}, [amount]);
+
 	return (
 		<tr key={props.products.id}>
 			<td style={{ width: "5%" }}>
 				<h5
 					style={{ cursor: "pointer" }}
 					onClick={() => {
+						const totalAmountStorage = localStorage.getItem("totalAmountList");
+						const reduceTotalAmount = localStorage.getItem(
+							`amountList${props.products.id}`
+						);
+						if (reduceTotalAmount) {
+							const reducedTotalAmount =
+								+JSON.parse(totalAmountStorage) -
+								+JSON.parse(reduceTotalAmount);
+							localStorage.setItem("totalAmountList", reducedTotalAmount);
+						}
 						props.onDelete(props.products.id);
 						localStorage.removeItem(`amountList${props.products.id}`);
+						localStorage.removeItem(`quantityItem${props.products.id}`);
 					}}>
 					X
 				</h5>
@@ -49,7 +72,8 @@ const TableCart = (props) => {
 					<input
 						type='number'
 						min='1'
-						placeholder='1'
+						placeholder={quantity}
+						value={quantity}
 						style={{ padding: "10%", textAlign: "center", width: "50%" }}
 						onChange={(e) => {
 							setAmount(e.target.value);
@@ -58,6 +82,7 @@ const TableCart = (props) => {
 								props.products.price,
 								props.products.id
 							);
+							props.addQuantity(e.target.value, props.products.id);
 						}}
 					/>
 				</h4>
