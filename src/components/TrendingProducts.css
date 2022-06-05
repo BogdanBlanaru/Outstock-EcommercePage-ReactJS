@@ -169,8 +169,8 @@ button {
 
 @media (max-width: 576px) {
 	.trending_products {
-		height: 500%;
-		top: 195%;
+		height: 520%;
+		top: 205%;
 	}
 
 	.description {

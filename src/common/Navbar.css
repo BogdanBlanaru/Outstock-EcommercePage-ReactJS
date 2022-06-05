@@ -102,7 +102,7 @@
 
 	.mobile_menu {
 		height: auto;
-		width: 22%;
+		width: 25%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -110,10 +110,11 @@
 		background-color: white;
 		border-radius: 10%;
 		position: fixed;
-		top: 9%;
-		left: 75%;
+		top: 10%;
+		left: 72%;
 		padding: 2%;
 		z-index: 301;
+		border: 1px solid #323232;
 	}
 
 	.links {
