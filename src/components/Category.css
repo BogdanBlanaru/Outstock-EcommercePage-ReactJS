@@ -68,3 +68,9 @@
 		margin: 2% 0;
 	}
 }
+
+@media (max-width: 576px) {
+	.components {
+		top: 90%;
+	}
+}
