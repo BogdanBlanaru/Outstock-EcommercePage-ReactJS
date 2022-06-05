@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Product from "./Product";
+import Product from "../../ProductCard/Product";
 import "./TrendingProducts.css";
-import ImgTrending1 from "../assets/imgTrending1.jpg";
-import ImgTrending2 from "../assets/imgTrending2.jpg";
+import ImgTrending1 from "../../../assets/imgTrending1.jpg";
+import ImgTrending2 from "../../../assets/imgTrending2.jpg";
 
 const TrendingProducts = () => {
 	const [products, setProducts] = useState([]);

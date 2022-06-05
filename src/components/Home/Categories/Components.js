@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Category.css";
 
-import imgCategory1 from "../assets/imgCategory1.jpg";
-import imgCategory2 from "../assets/imgCategory2.jpg";
-import imgCategory3 from "../assets/imgCategory3.jpg";
-import imgCategory4 from "../assets/imgCategory4.jpg";
+import imgCategory1 from "../../../assets/imgCategory1.jpg";
+import imgCategory2 from "../../../assets/imgCategory2.jpg";
+import imgCategory3 from "../../../assets/imgCategory3.jpg";
+import imgCategory4 from "../../../assets/imgCategory4.jpg";
 import Category from "./Category";
 
 const Components = () => {

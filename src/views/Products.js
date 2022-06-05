@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../common/Footer";
-import FilterProducts from "../components/FilterProducts";
+import Footer from "../common/Footer/Footer";
+import FilterProducts from "../components/Products/FilterProducts";
 
 const Products = () => {
 	return (

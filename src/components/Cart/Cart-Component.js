@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 import TableCart from "./TableCart";
-import Subscribe from "../common/Subscribe";
-import wishlistImg from "../assets/wishlist.jpg";
-import "./Wishlist-Component.css";
-import { addTotalAmount, addQuantity } from "../Helpers";
+import Subscribe from "../../common/Subscribe/Subscribe";
+import wishlistImg from "../../assets/wishlist.jpg";
+import "../Wishlist/Wishlist-Component.css";
+import { addTotalAmount, addQuantity } from "../../Helpers";
 import { Link } from "react-router-dom";
 
 const CartComponent = () => {

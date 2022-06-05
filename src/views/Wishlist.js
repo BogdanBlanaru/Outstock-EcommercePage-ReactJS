@@ -1,6 +1,6 @@
 import React from "react";
-import WishlistComponent from "../components/Wishlist-Component";
-import Footer from "../common/Footer";
+import WishlistComponent from "../components/Wishlist/Wishlist-Component";
+import Footer from "../common/Footer/Footer";
 
 const Wishlist = () => {
 	return (

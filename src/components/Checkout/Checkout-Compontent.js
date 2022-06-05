@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import wishlistImg from "../assets/wishlist.jpg";
-import "./Wishlist-Component.css";
+import wishlistImg from "../../assets/wishlist.jpg";
+import "../Wishlist/Wishlist-Component.css";
 import "./Checkout-Component.css";
-import useInput from "../Hooks/use-input";
-import Subscribe from "../common/Subscribe";
-import { countryList } from "../assets/AllCountries";
+import useInput from "../../Hooks/use-input";
+import Subscribe from "../../common/Subscribe/Subscribe";
+import { countryList } from "../../assets/AllCountries";
 
 const CheckoutComponent = () => {
 	const [country, setCountry] = useState("Romania");

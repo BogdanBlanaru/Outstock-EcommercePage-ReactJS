@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./SingleProductPage.css";
-import Footer from "../common/Footer";
-import Product from "../components/Product";
+import Footer from "../common/Footer/Footer";
+import Product from "../components/ProductCard/Product";
 import { addToWishlist, addToCart, addTotalAmount } from "../Helpers";
 import HeartImg from "../assets/heart.png";
-import Subscribe from "../common/Subscribe";
+import Subscribe from "../common/Subscribe/Subscribe";
 
 const SinglePageProduct = () => {
 	const params = useParams();

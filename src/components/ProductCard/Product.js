@@ -8,11 +8,11 @@ import {
 	CardText,
 	CardImg,
 } from "reactstrap";
-import HeartImg from "../assets/heart.png";
+import HeartImg from "../../assets/heart.png";
 import "./Product.css";
-import { addToWishlist } from "../Helpers";
+import { addToWishlist } from "../../Helpers";
 import { Link } from "react-router-dom";
-import ProductAddedModal from "../ProductAddedModal";
+import ProductAddedModal from "../../modals/ProductAddedModal";
 
 const Product = (props) => {
 	const [classes, setClasses] = useState(false);

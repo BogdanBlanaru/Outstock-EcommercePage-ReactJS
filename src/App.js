@@ -8,7 +8,7 @@ import Wishlist from "./views/Wishlist";
 import Cart from "./views/Cart";
 import Checkout from "./views/Checkout";
 import SinglePageProduct from "./views/SingleProductPage";
-import Navbar from "./common/Navbar";
+import Navbar from "./common/Navbar/Navbar";
 
 function App() {
 	return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./FilterProducts.css";
-import Product from "./Product";
-import Subscribe from "../common/Subscribe";
+import Product from "../ProductCard/Product";
+import Subscribe from "../../common/Subscribe/Subscribe";
 
 const FilterProducts = () => {
 	const [filter, setFilter] = useState([]);

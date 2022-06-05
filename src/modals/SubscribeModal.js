@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./SubscribeModal.css";
-import useInput from "./Hooks/use-input";
+import useInput from "../Hooks/use-input";
 
 const SubscribeModal = (props) => {
 	const {

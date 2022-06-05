@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import wishlistImg from "../assets/wishlist.jpg";
+import wishlistImg from "../../assets/wishlist.jpg";
 import "./Wishlist-Component.css";
 
 import Table from "./Table";
-import Subscribe from "../common/Subscribe";
-import { addToCart, addTotalAmount } from "../Helpers";
+import Subscribe from "../../common/Subscribe/Subscribe";
+import { addToCart, addTotalAmount } from "../../Helpers";
 
 const WishlistComponent = () => {
 	const [values, setValues] = useState([]);

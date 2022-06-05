@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { addCalculatedTotalAmount } from "../Helpers";
+import { addCalculatedTotalAmount } from "../../Helpers";
 
 const TableCart = (props) => {
 	const [amount, setAmount] = useState(1);

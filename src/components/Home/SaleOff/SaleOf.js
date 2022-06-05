@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Product from "./Product";
-import Brand1Img from "../assets/brand-01.png";
-import Brand2Img from "../assets/brand-02.png";
-import Brand3Img from "../assets/brand-03.png";
-import Brand4Img from "../assets/brand-04.png";
-import Brand5Img from "../assets/brand-05.png";
-import Brand6Img from "../assets/brand-06.png";
-import "./TrendingProducts.css";
+import Product from "../../ProductCard/Product";
+import Brand1Img from "../../../assets/brand-01.png";
+import Brand2Img from "../../../assets/brand-02.png";
+import Brand3Img from "../../../assets/brand-03.png";
+import Brand4Img from "../../../assets/brand-04.png";
+import Brand5Img from "../../../assets/brand-05.png";
+import Brand6Img from "../../../assets/brand-06.png";
+import "../TrendingProducts/TrendingProducts.css";
 import "./SaleOf.css";
-import Subscribe from "../common/Subscribe";
+import Subscribe from "../../../common/Subscribe/Subscribe";
 
 const SaleOf = () => {
 	const [products, setProducts] = useState([]);

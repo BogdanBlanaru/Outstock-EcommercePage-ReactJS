@@ -1,18 +1,18 @@
 import React from "react";
-import wishlistImg from "../assets/wishlist.jpg";
-import LocationImg from "../assets/location.png";
-import EmailImg from "../assets/mail.png";
-import PhoneImg from "../assets/phone.png";
-import Team1Img from "../assets/aboutus1.jpg";
-import Team2Img from "../assets/aboutus2.jpg";
-import Team3Img from "../assets/aboutus3.jpg";
-import Team4Img from "../assets/aboutus4.jpg";
-import "./Wishlist-Component.css";
-import "./Checkout-Component.css";
+import wishlistImg from "../../assets/wishlist.jpg";
+import LocationImg from "../../assets/location.png";
+import EmailImg from "../../assets/mail.png";
+import PhoneImg from "../../assets/phone.png";
+import Team1Img from "../../assets/aboutus1.jpg";
+import Team2Img from "../../assets/aboutus2.jpg";
+import Team3Img from "../../assets/aboutus3.jpg";
+import Team4Img from "../../assets/aboutus4.jpg";
+import "../Wishlist/Wishlist-Component.css";
+import "../Checkout/Checkout-Component.css";
 import "./AboutUsComponent.css";
-import "../assets/CircularDiagrams.css";
-import useInput from "../Hooks/use-input";
-import Subscribe from "../common/Subscribe";
+import "../../assets/CircularDiagrams.css";
+import useInput from "../../Hooks/use-input";
+import Subscribe from "../../common/Subscribe/Subscribe";
 
 const AboutUsComponent = () => {
 	const {

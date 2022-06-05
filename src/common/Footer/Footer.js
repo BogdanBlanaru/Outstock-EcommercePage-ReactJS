@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import MastercardImg from "../assets/mastercard.svg";
-import VisaImg from "../assets/visa.svg";
-import AmexImg from "../assets/amex.svg";
-import PaypalImg from "../assets/paypal.svg";
-import KlarnaImg from "../assets/klarna.svg";
-import GiftCardImg from "../assets/gift-card.svg";
-import DHLLogoImg from "../assets/DHL_logo.svg";
-import RelaisColisImg from "../assets/relais-colis_logo.svg";
+import MastercardImg from "../../assets/mastercard.svg";
+import VisaImg from "../../assets/visa.svg";
+import AmexImg from "../../assets/amex.svg";
+import PaypalImg from "../../assets/paypal.svg";
+import KlarnaImg from "../../assets/klarna.svg";
+import GiftCardImg from "../../assets/gift-card.svg";
+import DHLLogoImg from "../../assets/DHL_logo.svg";
+import RelaisColisImg from "../../assets/relais-colis_logo.svg";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
-import useInput from "../Hooks/use-input";
+import useInput from "../../Hooks/use-input";
 
 const Footer = () => {
 	const [active1, setActive1] = useState(false);

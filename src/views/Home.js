@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import Slider from "../components/Slider";
-import Components from "../components/Components";
-import TrendingProducts from "../components/TrendingProducts";
-import SaleOf from "../components/SaleOf";
-import Footer from "../common/Footer";
-import SubscribeModal from "../SubscribeModal";
+import Slider from "../components/Home/Slider/Slider";
+import Components from "../components/Home/Categories/Components";
+import TrendingProducts from "../components/Home/TrendingProducts/TrendingProducts";
+import SaleOf from "../components/Home/SaleOff/SaleOf";
+import Footer from "../common/Footer/Footer";
+import SubscribeModal from "../modals/SubscribeModal";
 
 const Home = () => {
 	const [subscribe, setSubscribe] = useState(true);
