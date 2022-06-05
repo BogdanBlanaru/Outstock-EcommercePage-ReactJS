@@ -1,4 +1,5 @@
 import React from "react";
+import "./Wishlist-Component.css";
 
 const Table = (props) => {
 	return (
@@ -30,16 +31,7 @@ const Table = (props) => {
 						props.addToCart(props.products);
 						props.addTotalAmount(1, props.products.price, props.products.id);
 					}}
-					style={{
-						width: "75%",
-						backgroundColor: "#323232",
-						color: "#ffffff",
-						padding: "10px",
-						textAlign: "center",
-						fontSize: "10px",
-						fontWeight: "bold",
-						border: "none",
-					}}>
+					className='action_btn'>
 					ADD TO CART
 				</button>
 			</td>

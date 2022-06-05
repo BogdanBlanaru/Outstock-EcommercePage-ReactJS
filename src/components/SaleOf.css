@@ -118,7 +118,8 @@
 
 @media (max-width: 576px) {
 	.saleof_products {
-		top: 690%;
+		height: 390%;
+		top: 720%;
 	}
 
 	.container_saleof {

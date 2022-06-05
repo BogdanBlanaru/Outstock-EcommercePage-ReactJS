@@ -83,16 +83,17 @@ const CartComponent = () => {
 										setValue(totalAmount);
 									}
 								}}
-								style={{
-									width: "100%",
-									backgroundColor: "#323232",
-									color: "#ffffff",
-									padding: "10px",
-									textAlign: "center",
-									fontSize: "10px",
-									fontWeight: "bold",
-									border: "none",
-								}}>
+								// style={{
+								// 	width: "100%",
+								// 	backgroundColor: "#323232",
+								// 	color: "#ffffff",
+								// 	padding: "10px",
+								// 	textAlign: "center",
+								// 	fontSize: "10px",
+								// 	fontWeight: "bold",
+								// 	border: "none",
+								// }}
+								className='action_btn'>
 								UPDATE CART TOTAL
 							</button>
 						</td>

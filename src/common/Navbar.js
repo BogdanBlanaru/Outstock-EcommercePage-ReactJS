@@ -71,24 +71,54 @@ const Navbar = () => {
 
 			{showBurgerMenu && (
 				<div className='mobile_menu'>
-					<Link className='links ' to='/'>
+					<Link
+						className='links'
+						to='/'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						Home
 					</Link>
-					<Link className='links ' to='/products'>
+					<Link
+						className='links'
+						to='/products'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						Products
 					</Link>
 
-					<Link className='links ' to='/aboutus'>
+					<Link
+						className='links'
+						to='/aboutus'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						About Us
 					</Link>
 
-					<Link className='links ' to='/wishlist'>
+					<Link
+						className='links'
+						to='/wishlist'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						Wishlist({values.length})
 					</Link>
-					<Link className='links ' to='/cart'>
+					<Link
+						className='links'
+						to='/cart'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						Cart({valuesCart.length})
 					</Link>
-					<Link className='links' to='/checkout'>
+					<Link
+						className='links'
+						to='/checkout'
+						onClick={() => {
+							setShowBurgerMenu(false);
+						}}>
 						Checkout
 					</Link>
 				</div>

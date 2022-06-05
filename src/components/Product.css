@@ -85,6 +85,10 @@
 		position: relative;
 	}
 
+	.buttons_product {
+		display: none;
+	}
+
 	.buttons_productMobile {
 		height: 10%;
 		width: 11%;

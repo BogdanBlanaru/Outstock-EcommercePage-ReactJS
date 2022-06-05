@@ -253,35 +253,35 @@
 
 @media (max-width: 576px) {
 	.footer_mobile {
-		height: 12vh;
+		height: 15vh;
 	}
 
 	.active_footer {
-		bottom: 12vh;
+		bottom: 15vh;
 	}
 
 	.follow_us {
-		height: 7vh;
+		height: 8vh;
 		font-size: 12px;
 	}
 
 	.corporate {
-		height: 11vh;
+		height: 15vh;
 		font-size: 9px;
 	}
 
 	.newsletter_footer {
-		height: 7vh;
+		height: 10vh;
 		font-size: 10px;
 	}
 
 	.customer_service {
-		height: 12vh;
+		height: 18vh;
 		font-size: 12px;
 	}
 
 	.legal_area {
-		height: 7vh;
-		font-size: 11px;
+		height: 13vh;
+		font-size: 10px;
 	}
 }
