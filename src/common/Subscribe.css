@@ -48,3 +48,30 @@
 	cursor: pointer;
 	transition: all 0.5s ease-in;
 }
+
+@media (max-width: 768px) {
+	.subscribe_section {
+		height: 60vh;
+	}
+
+	.subscribe_btn {
+		bottom: 12%;
+	}
+}
+
+@media (max-width: 576px) {
+	.mobile_subscribe_title {
+		margin-bottom: 2%;
+		font-size: 25px;
+	}
+
+	.mobile_subscribe_description {
+		font-size: 12px;
+		margin: 3% 0;
+	}
+
+	.subscribe_btn {
+		height: 40px;
+		width: 165px;
+	}
+}

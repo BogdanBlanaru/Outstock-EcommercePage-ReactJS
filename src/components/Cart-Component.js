@@ -70,7 +70,7 @@ const CartComponent = () => {
 							<h3>Total</h3>
 						</td>
 						<td>
-							<h3>{value.toFixed(2)}</h3>
+							<h3>${value.toFixed(2)}</h3>
 						</td>
 						<td>
 							<button
@@ -99,22 +99,7 @@ const CartComponent = () => {
 				</tbody>
 			</table>
 			<Link to='/checkout'>
-				<button
-					style={{
-						width: "15%",
-						backgroundColor: "#323232",
-						color: "#ffffff",
-						padding: "15px",
-						textAlign: "center",
-						fontSize: "12px",
-						fontWeight: "bold",
-						border: "none",
-						position: "relative",
-						left: "50%",
-						margin: "3% 0 0 0",
-					}}>
-					PROCEED TO CHECKOUT
-				</button>
+				<button className='proceedCheckout_btn'>PROCEED TO CHECKOUT</button>
 			</Link>
 			<hr style={{ width: "100%", marginTop: "7%" }} />
 			<Subscribe />

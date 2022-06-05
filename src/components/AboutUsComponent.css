@@ -12,6 +12,15 @@
 	margin: 5.5% 5%;
 }
 
+#name_aboutUs,
+#email_aboutUs,
+#subject_aboutUs,
+#message_aboutUs {
+	width: 60%;
+	position: relative;
+	right: 20%;
+}
+
 .team {
 	height: auto;
 	width: 100%;
@@ -48,4 +57,39 @@
 	font-size: 1.2rem;
 	text-align: center;
 	color: #6c6c6c;
+}
+
+@media (max-width: 768px) {
+	#name_aboutUs,
+	#email_aboutUs,
+	#subject_aboutUs,
+	#message_aboutUs {
+		width: 95%;
+		position: relative;
+		right: 0;
+	}
+
+	.team h1 {
+		width: 100%;
+		font-size: 30px;
+	}
+
+	.team_images {
+		flex-direction: column;
+	}
+
+	.member_container {
+		width: 50%;
+		margin: 3% 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.findUs {
+		margin: 1% 0;
+	}
+
+	.team h1 {
+		font-size: 25px;
+	}
 }

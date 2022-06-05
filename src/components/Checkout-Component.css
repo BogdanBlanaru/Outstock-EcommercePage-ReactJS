@@ -108,9 +108,15 @@ button:disabled:active {
 	cursor: not-allowed;
 }
 
-.form-actions {
+.form-actions,
+.form-actions_aboutUs {
 	text-align: right;
 	margin-top: 8%;
+}
+
+.form-actions_aboutUs {
+	position: relative;
+	right: 79%;
 }
 
 .invalid_input {
@@ -147,4 +153,24 @@ button:disabled:active {
 	justify-content: space-between;
 	align-items: center;
 	margin: 2% 0;
+}
+
+@media (max-width: 768px) {
+	.two_components {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10%;
+	}
+
+	.form_checkout {
+		height: 50%;
+		width: 95%;
+		margin-top: 4%;
+	}
+}
+
+@media (max-width: 576px) {
+	.form-actions_aboutUs {
+		right: 60%;
+	}
 }

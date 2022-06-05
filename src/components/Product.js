@@ -67,6 +67,18 @@ const Product = (props) => {
 					}}>
 					<img className='heart_img' src={HeartImg} />
 				</div>
+
+				<div
+					className='buttons_productMobile'
+					onClick={() => {
+						addToWishlist(props.products);
+						setProductAdded(true);
+						setInterval(() => {
+							setProductAdded(false);
+						}, 1500);
+					}}>
+					<img className='heart_img' src={HeartImg} />
+				</div>
 			</Card>
 
 			{productAdded && (

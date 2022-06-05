@@ -124,7 +124,7 @@ const AboutUsComponent = () => {
 					</div>
 
 					<div className='form_checkout'>
-						<h2 style={{ marginLeft: "3%" }}>Your order</h2>
+						<h2 style={{ marginLeft: "3%" }}>Contact us</h2>
 						<form onSubmit={formSubmitHandler} className='form_body'>
 							<div className='control-group'>
 								<div className='form-control'>
@@ -136,16 +136,11 @@ const AboutUsComponent = () => {
 									</label>
 									<input
 										type='text'
-										id='name'
+										id='name_aboutUs'
 										onChange={nameChangeHandler}
 										onBlur={nameBlurHandler}
 										value={enteredName}
 										className={nameInputClasses}
-										style={{
-											width: "60%",
-											position: "relative",
-											right: "20%",
-										}}
 									/>
 									{enteredNameIsNotValid && (
 										<p className='error-text'>Name must not be empty.</p>
@@ -161,16 +156,11 @@ const AboutUsComponent = () => {
 									</label>
 									<input
 										type='text'
-										id='email'
+										id='email_aboutUs'
 										onChange={emailAdressChangeHandler}
 										onBlur={emailAdressBlurHandler}
 										value={enteredEmailAdress}
 										className={emailAdressInputClasses}
-										style={{
-											width: "60%",
-											position: "relative",
-											right: "20%",
-										}}
 									/>
 
 									{enteredEmailAdressIsNotValid && (
@@ -188,15 +178,10 @@ const AboutUsComponent = () => {
 									</label>
 									<input
 										type='text'
-										id='subject'
+										id='subject_aboutUs'
 										onChange={subjectChangeHandler}
 										value={enteredSubject}
 										className='form-control_input'
-										style={{
-											width: "60%",
-											position: "relative",
-											right: "20%",
-										}}
 									/>
 								</div>
 
@@ -210,23 +195,13 @@ const AboutUsComponent = () => {
 									<textarea
 										rows='5'
 										cols='60'
-										id='message'
+										id='message_aboutUs'
 										onChange={messageChangeHandler}
 										value={enteredMessage}
-										className='form-control_input'
-										style={{
-											width: "60%",
-											position: "relative",
-											right: "20%",
-										}}></textarea>{" "}
+										className='form-control_input'></textarea>{" "}
 								</div>
 
-								<div
-									className='form-actions'
-									style={{
-										position: "relative",
-										right: "79%",
-									}}>
+								<div className='form-actions_aboutUs'>
 									<button disabled={!isValid} style={{ fontSize: "1rem" }}>
 										SEND
 									</button>

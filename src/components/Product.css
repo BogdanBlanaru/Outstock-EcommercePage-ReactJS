@@ -74,9 +74,29 @@
 	opacity: 0;
 }
 
+.buttons_productMobile {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	.card_product {
-		height: 20%;
+		height: 55vh;
 		margin: 3% 0;
+		position: relative;
+	}
+
+	.buttons_productMobile {
+		height: 10%;
+		width: 11%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #f5f5f5;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 87%;
+		right: 5%;
+		cursor: pointer;
+		z-index: 50;
 	}
 }

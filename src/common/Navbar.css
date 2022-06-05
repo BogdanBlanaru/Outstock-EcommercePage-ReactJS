@@ -109,7 +109,7 @@
 		align-items: center;
 		background-color: white;
 		border-radius: 10%;
-		position: absolute;
+		position: fixed;
 		top: 9%;
 		left: 75%;
 		padding: 2%;

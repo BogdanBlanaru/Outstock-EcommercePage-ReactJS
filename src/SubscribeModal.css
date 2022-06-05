@@ -78,3 +78,23 @@
 	border-radius: 5%;
 	font-size: 12px;
 }
+
+@media (max-width: 768px) {
+	.modal {
+		height: 50%;
+	}
+
+	.labelInput_subscribeModal {
+		margin-top: 10%;
+	}
+}
+
+@media (max-width: 576px) {
+	.labelInput_subscribeModal {
+		margin-top: 20%;
+	}
+
+	.description_subscribeModal {
+		font-size: 13px;
+	}
+}

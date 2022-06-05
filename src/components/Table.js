@@ -36,7 +36,7 @@ const Table = (props) => {
 						color: "#ffffff",
 						padding: "10px",
 						textAlign: "center",
-						fontSize: "12px",
+						fontSize: "10px",
 						fontWeight: "bold",
 						border: "none",
 					}}>

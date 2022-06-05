@@ -58,13 +58,7 @@ const TrendingProducts = () => {
 				<div className='bottles'>
 					<h3 className='subtitle_bottles'>Products essentials</h3>
 					<h1 className='title_bottles'>Bottle With Wooden Cork</h1>
-					<p
-						style={{
-							fontSize: "13px",
-							color: "#7a7c7d",
-							position: "relative",
-							left: "3%",
-						}}>
+					<p className='description_bottles'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam.
@@ -76,13 +70,7 @@ const TrendingProducts = () => {
 				<div className='bottles'>
 					<h3 className='subtitle_bottles'>Products essentials</h3>
 					<h1 className='title_bottles'>Hauteville Plywood Chair</h1>
-					<p
-						style={{
-							fontSize: "13px",
-							color: "#7a7c7d",
-							position: "relative",
-							left: "3%",
-						}}>
+					<p className='description_bottles'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam.

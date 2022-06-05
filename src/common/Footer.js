@@ -19,6 +19,8 @@ const Footer = () => {
 	const [active4, setActive4] = useState(false);
 	const [active5, setActive5] = useState(false);
 
+	const [backdrop, setBackdrop] = useState(false);
+
 	const displayClasses1 = (classes) => {
 		const classesActive1 = active1
 			? `${classes} active_footer`
@@ -115,6 +117,60 @@ const Footer = () => {
 	const emailAdressInputClasses = enteredEmailAdressIsNotValid
 		? "invalid_input"
 		: "form-control_input";
+
+	const onClickHandler1 = () => {
+		setActive1((prevActive1) => !prevActive1);
+		setActive2(false);
+		setActive3(false);
+		setActive4(false);
+		setActive5(false);
+		setBackdrop(true);
+	};
+
+	const onClickHandler2 = () => {
+		setActive2((prevActive2) => !prevActive2);
+		setActive1(false);
+		setActive3(false);
+		setActive4(false);
+		setActive5(false);
+		setBackdrop(true);
+	};
+
+	const onClickHandler3 = () => {
+		setActive3((prevActive3) => !prevActive3);
+		setActive1(false);
+		setActive2(false);
+		setActive4(false);
+		setActive5(false);
+		setBackdrop(true);
+	};
+
+	const onClickHandler4 = () => {
+		setActive4((prevActive4) => !prevActive4);
+		setActive1(false);
+		setActive2(false);
+		setActive3(false);
+		setActive5(false);
+		setBackdrop(true);
+	};
+
+	const onClickHandler5 = () => {
+		setActive5((prevActive5) => !prevActive5);
+		setActive1(false);
+		setActive2(false);
+		setActive3(false);
+		setActive4(false);
+		setBackdrop(true);
+	};
+
+	const onClickHandlerBackdrop = () => {
+		setActive1(false);
+		setActive2(false);
+		setActive3(false);
+		setActive4(false);
+		setActive5(false);
+		setBackdrop(false);
+	};
 
 	return (
 		<>
@@ -218,17 +274,7 @@ const Footer = () => {
 							resetEmailAdressInput();
 						}
 					}}
-					style={{
-						height: "37%",
-						width: "4%",
-						backgroundColor: "#323232",
-						color: "#ffffff",
-						textAlign: "center",
-						fontSize: "12px",
-						fontWeight: "bold",
-						border: "none",
-						margin: "1.5% 25% 0 1%",
-					}}>
+					className='newsletter_footerbtn'>
 					{">"}
 				</button>
 			</div>
@@ -293,13 +339,34 @@ const Footer = () => {
 				className={displayClasses5("legal_area")}
 				onMouseOver={onMouseOverHandler5}
 				onMouseOut={onMouseOutHandler5}>
-				<ul className='corporate'>
+				<ul>
 					<li style={{ cursor: "pointer" }}>Privacy and Cookie Policy</li>
 				</ul>
 				<ul>
 					<li style={{ cursor: "pointer" }}>Terms and Conditions</li>
 				</ul>
 			</div>
+
+			<footer className='footer_mobile'>
+				<div className='footer_element' onClick={onClickHandler1}>
+					FOLLOW US
+				</div>
+				<div className='footer_element' onClick={onClickHandler2}>
+					CORPORATE
+				</div>
+				<div className='footer_element' onClick={onClickHandler3}>
+					NEWSLETTER
+				</div>
+				<div className='footer_element' onClick={onClickHandler4}>
+					CUSTOMER SERVICE
+				</div>
+				<div className='footer_element' onClick={onClickHandler5}>
+					LEGAL AREA
+				</div>
+			</footer>
+			{backdrop && (
+				<div className='backdrop_footer' onClick={onClickHandlerBackdrop}></div>
+			)}
 		</>
 	);
 };

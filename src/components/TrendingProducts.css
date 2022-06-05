@@ -103,6 +103,13 @@ button {
 	left: 3%;
 }
 
+.description_bottles {
+	font-size: 13px;
+	color: #7a7c7d;
+	position: relative;
+	left: 3%;
+}
+
 .btn_bottles {
 	height: 15%;
 	width: 25%;
@@ -140,7 +147,7 @@ button {
 
 	.container {
 		height: 65%;
-		width: 50%;
+		width: 55%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -161,4 +168,37 @@ button {
 }
 
 @media (max-width: 576px) {
+	.trending_products {
+		height: 480%;
+		top: 185%;
+	}
+
+	.description {
+		margin: 10% 0 7% 0;
+		width: 80%;
+	}
+
+	.list {
+		height: 90%;
+		width: 100%;
+	}
+
+	.btn_bottles {
+		height: 14%;
+		width: 20%;
+		z-index: 101;
+		font-size: 8px;
+		margin: 7% 0 0 2%;
+		position: relative;
+		left: 3%;
+	}
+
+	.description_bottles {
+		font-size: 9px;
+		margin-bottom: 1%;
+	}
+
+	.container {
+		width: 70%;
+	}
 }

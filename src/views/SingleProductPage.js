@@ -99,7 +99,7 @@ const SinglePageProduct = () => {
 			</div>
 			<div className='tabbed_component'>
 				<h3>Description</h3>
-				<h3>Reviews</h3>
+				{/* <h3>Reviews</h3> */}
 			</div>
 			<p className='tabbedcomponent_description'>
 				{products.description}

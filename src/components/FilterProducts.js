@@ -96,6 +96,26 @@ const FilterProducts = () => {
 	return (
 		<>
 			<div className='filter_products'>
+				<div className='tools_mobile'>
+					<input
+						style={{ padding: "1%", width: "80%" }}
+						type='text'
+						placeholder='Search...'
+						onChange={(e) => {
+							setInputValue(e.target.value);
+						}}
+					/>
+					<form action='/action_page.php' className='input_select'>
+						<select
+							style={{ padding: "1%", width: "80%" }}
+							onChange={inputOptionHandler}>
+							<option value='default sorting'>Default sorting</option>
+							<option value='low to high'>Sort by price: low to high</option>
+							<option value='high to low'>Sort by price: high to low</option>
+						</select>
+					</form>
+				</div>
+
 				<div className='filters'>
 					<h3>Product Categories</h3>
 					{isLoadingCategories ? (

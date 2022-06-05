@@ -83,12 +83,24 @@
 .input_newsletterFooter {
 	height: auto;
 	width: 25%;
-	margin-left: -30%;
-	margin-top: 1.5%;
+	margin-left: -25%;
+	margin-top: 2%;
+}
+
+.newsletter_footerbtn {
+	height: 26%;
+	width: 4%;
+	background-color: #323232;
+	color: #ffffff;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	border: none;
+	margin: 2% 25% 0 1%;
 }
 
 .customer_service {
-	height: 30vh;
+	height: 28vh;
 }
 
 .customer_service ul {
@@ -118,6 +130,7 @@
 	width: 20%;
 	z-index: 1001;
 	cursor: pointer;
+	margin: 0 1%;
 }
 
 .legal_area {
@@ -138,4 +151,137 @@
 
 .hidden {
 	display: none;
+}
+
+.footer_mobile {
+	display: none;
+}
+
+.backdrop_footer {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		display: none;
+	}
+
+	.footer_mobile {
+		height: 15vh;
+		width: 100vw;
+		background-color: #f5f5f5;
+		color: #323232;
+		font-size: 12px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		border-top: #323232 1px solid;
+		z-index: 500;
+	}
+
+	.footer_element {
+		height: 20%;
+	}
+
+	.active_footer {
+		bottom: 15vh;
+		z-index: 499;
+	}
+
+	.backdrop_footer {
+		display: flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 490;
+		opacity: 0;
+	}
+
+	.follow_us {
+		height: 9vh;
+	}
+
+	.corporate {
+		height: 14vh;
+		font-size: 12px;
+	}
+
+	.corporate ul {
+		height: 80%;
+		margin-left: 4%;
+	}
+
+	.newsletter_footer {
+		height: 10vh;
+		font-size: 12px;
+	}
+
+	.input_newsletterFooter {
+		height: auto;
+		width: 20%;
+		margin-left: -23%;
+		margin-top: 2%;
+	}
+
+	.customer_service {
+		height: 15vh;
+		font-size: 14px;
+	}
+
+	.customer_service ul {
+		height: 80%;
+		margin-left: 4%;
+	}
+
+	.customer_service_img {
+		height: 25%;
+		width: 25%;
+		margin: 0;
+	}
+
+	.legal_area {
+		height: 8vh;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 576px) {
+	.footer_mobile {
+		height: 12vh;
+	}
+
+	.active_footer {
+		bottom: 12vh;
+	}
+
+	.follow_us {
+		height: 7vh;
+		font-size: 12px;
+	}
+
+	.corporate {
+		height: 11vh;
+		font-size: 9px;
+	}
+
+	.newsletter_footer {
+		height: 7vh;
+		font-size: 10px;
+	}
+
+	.customer_service {
+		height: 12vh;
+		font-size: 12px;
+	}
+
+	.legal_area {
+		height: 7vh;
+		font-size: 11px;
+	}
 }

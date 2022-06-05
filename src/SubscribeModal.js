@@ -28,7 +28,9 @@ const SubscribeModal = (props) => {
 			<div className='modal'>
 				<h2>Get Our Email Letter</h2>
 
-				<p style={{ width: "60%", color: "#7a6e6c" }}>
+				<p
+					style={{ width: "60%", color: "#7a6e6c" }}
+					className='description_subscribeModal'>
 					Subscribe to the Outstock mailing list to receive updates on new
 					arrivals, special offers and other discount information.
 				</p>

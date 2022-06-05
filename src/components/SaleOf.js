@@ -150,6 +150,23 @@ const SaleOf = () => {
 					className='saleoff_brandImg'
 				/>
 			</div>
+			<div className='saleoff_brandsMobile'>
+				<img
+					src={changingImg1}
+					alt='Brand Image'
+					className='saleoff_brandImg'
+				/>
+				<img
+					src={changingImg2}
+					alt='Brand Image'
+					className='saleoff_brandImg'
+				/>
+				<img
+					src={changingImg3}
+					alt='Brand Image'
+					className='saleoff_brandImg'
+				/>
+			</div>
 			<Subscribe />
 		</div>
 	);
