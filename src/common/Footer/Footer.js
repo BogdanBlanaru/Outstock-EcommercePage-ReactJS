@@ -7,6 +7,11 @@ import KlarnaImg from "../../assets/klarna.svg";
 import GiftCardImg from "../../assets/gift-card.svg";
 import DHLLogoImg from "../../assets/DHL_logo.svg";
 import RelaisColisImg from "../../assets/relais-colis_logo.svg";
+import FacebookImg from "../../assets/facebook.png";
+import TwitterImg from "../../assets/twitter.png";
+import YoutubeImg from "../../assets/youtube.png";
+import InstagramImg from "../../assets/instagram.png";
+import TiktokImg from "../../assets/tiktok.png";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
@@ -196,6 +201,13 @@ const Footer = () => {
 				onMouseOver={onMouseOverHandler1}
 				onMouseOut={onMouseOutHandler1}>
 				<p>FOLLOW US ON OUR SOCIAL NETWORKS!</p>
+				<div className='social_media_footer'>
+					<img src={FacebookImg} alt='Social Media Image' />
+					<img src={TwitterImg} alt='Social Media Image' />
+					<img src={YoutubeImg} alt='Social Media Image' />
+					<img src={InstagramImg} alt='Social Media Image' />
+					<img src={TiktokImg} alt='Social Media Image' />
+				</div>
 			</div>
 
 			<div

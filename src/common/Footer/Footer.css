@@ -57,6 +57,28 @@
 
 .follow_us {
 	height: 18vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.follow_us p {
+	width: 27%;
+}
+
+.social_media_footer {
+	height: 100%;
+	width: 20%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1.5%;
+}
+
+.social_media_footer img {
+	height: 27%;
+	width: 11%;
+	cursor: pointer;
 }
 
 .corporate {
@@ -204,7 +226,16 @@
 	}
 
 	.follow_us {
-		height: 9vh;
+		height: 10vh;
+	}
+
+	.follow_us p {
+		width: 40%;
+		font-size: 12px;
+	}
+
+	.social_media_footer {
+		width: 25%;
 	}
 
 	.corporate {
@@ -218,7 +249,7 @@
 	}
 
 	.newsletter_footer {
-		height: 10vh;
+		height: 12vh;
 		font-size: 12px;
 	}
 
@@ -261,8 +292,16 @@
 	}
 
 	.follow_us {
-		height: 8vh;
-		font-size: 12px;
+		height: 10vh;
+	}
+
+	.follow_us p {
+		width: 47%;
+		font-size: 9px;
+	}
+
+	.social_media_footer {
+		width: 35%;
 	}
 
 	.corporate {
@@ -273,6 +312,13 @@
 	.newsletter_footer {
 		height: 10vh;
 		font-size: 10px;
+	}
+
+	.input_newsletterFooter {
+		height: auto;
+		width: 30%;
+		margin-left: -18%;
+		margin-top: 3%;
 	}
 
 	.customer_service {

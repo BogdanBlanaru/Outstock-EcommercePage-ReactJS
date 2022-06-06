@@ -5,6 +5,11 @@ import Footer from "../common/Footer/Footer";
 import Product from "../components/ProductCard/Product";
 import { addToWishlist, addToCart, addTotalAmount } from "../Helpers";
 import HeartImg from "../assets/heart.png";
+import FacebookImg from "../assets/facebook.png";
+import TwitterImg from "../assets/twitter.png";
+import YoutubeImg from "../assets/youtube.png";
+import InstagramImg from "../assets/instagram.png";
+import TiktokImg from "../assets/tiktok.png";
 import Subscribe from "../common/Subscribe/Subscribe";
 
 const SinglePageProduct = () => {
@@ -55,11 +60,15 @@ const SinglePageProduct = () => {
 				/>
 				<div className='singleproduct_informations'>
 					<h2 style={{ marginBottom: "3%" }}>{products.title}</h2>
-					<p style={{ margin: "7% 0" }}>{products.description}</p>
-					<h2 style={{ marginTop: "10%", marginBottom: "2%" }}>
+					<p>{products.description}</p>
+					<h2 style={{ marginTop: "10%", marginBottom: "4%" }}>
 						${products.price}
 					</h2>
-					<hr />
+					<hr
+						style={{
+							margin: "1% 0",
+						}}
+					/>
 					<div
 						style={{
 							display: "flex",
@@ -92,9 +101,22 @@ const SinglePageProduct = () => {
 							<img className='heart_img' src={HeartImg} />
 						</div>
 					</div>
-					<hr />
+					<hr
+						style={{
+							margin: "1% 0",
+						}}
+					/>
 					<h4>Category: {products.category}</h4>
-					<h4>Share This Product </h4>
+					<div className='shareProduct_singleProduct'>
+						<h4>Share This Product:</h4>
+						<div className='social_media_singleProduct'>
+							<img src={FacebookImg} alt='Social Media Image' />
+							<img src={TwitterImg} alt='Social Media Image' />
+							<img src={YoutubeImg} alt='Social Media Image' />
+							<img src={InstagramImg} alt='Social Media Image' />
+							<img src={TiktokImg} alt='Social Media Image' />
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className='tabbed_component'>
